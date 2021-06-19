@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title>CRUD</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'Enroll/css/bootstrap.css' %}">
+
+	<link rel="stylesheet" type="text/css" href="{% static 'Enroll/css/style.css' %}">
+
+	<!-- social media-->
+    
+	
+
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+
+</head>
+<body style="background: linear-gradient(45deg,pink,grey);">
+	
+
+	<div class="container mt-5">
+		<h2 class="text-center alert alert-warning"><i class="fas fa-database">&nbsp;&nbsp;</i>Welcome To Tuition Database!!!!&nbsp;&nbsp;<i class="fas fa-user-friends"></i></h2>
+
+		
+		{% block content %}
+
+
+		{% endblock content %}
+	</div>
+
+
+
+
+	<script src="{% static 'Enroll/js/jquery.js' %}"></script>
+	<script src="{% static 'Enroll/js/popper.js' %}"></script>
+	<script src="{% static 'Enroll/js/bootstrap.js' %}"></script>
+
+	<script src="{% static 'Enroll/js/myscript.js' %}"></script>
+	
+
+</body>
+</html>

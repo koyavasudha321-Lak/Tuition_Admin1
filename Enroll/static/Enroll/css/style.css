@@ -1,0 +1,25 @@
+.btn-warning{
+	background: linear-gradient(45deg, darkorange, orangered,lightsalmon);
+}
+
+.btn-danger{
+	background: linear-gradient(45deg, aqua, crimson, lightcoral);
+}
+
+.btn-success{
+	background: linear-gradient(45deg, darkgreen, forestgreen);
+}
+
+.alert-warning{
+	background: linear-gradient(grey,coral,grey);
+}
+
+.alert-info{
+	background: linear-gradient(45deg, grey, aqua, grey);
+}
+
+.btn-info{
+	background: linear-gradient(45deg,gold, lime);
+} 
+
+

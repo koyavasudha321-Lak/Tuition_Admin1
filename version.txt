@@ -1,0 +1,4 @@
+Django : 3.1.2(command py -m django --version)
+HTML : HTML5
+CSS
+JAVASCRIPT
