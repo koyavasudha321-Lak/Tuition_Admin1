@@ -23,3 +23,7 @@ function cleartxt(){
 	document.getElementById("myInput").focus();
 }
 
+function msg(){
+	alert("Successfully Updated!!!");
+}
+

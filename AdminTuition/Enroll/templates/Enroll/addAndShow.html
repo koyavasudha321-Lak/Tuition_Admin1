@@ -3,20 +3,49 @@
 {% block content %}
 
 
-<div class="row mb-3">
-		<div class="col-md-8 offset-2">
-			<form>
-				<div class="input-group">
-					<input type="text" placeholder="Search here...." class=" form-control form-control-lg shadow p-3 mb-5 bg-white rounded " id="myInput" onkeyup="searchRecords()">
-					&nbsp;&nbsp;
-					<input type="button" value="Clear" onclick="cleartxt()" class="mb-5 btn-info rounded-circle text-dark" >	
-				
-			</form>
-		</div>
+
+
+
+<div class="row mb-3 container-fluid" >
+	<div class="card border-warning shadow-0" style="height: 159px; width: 250px;" >
+    	<div class="card-body bg-danger text-dark">
+	       <h5 class="card-title text-dark text-center"><i class="fa fa-eye fa-2x" aria-hidden="true"></i></h5>
+	       <p class="card-text text-white text-center" style="font-size: 25px;"><b>{{counts}} </b></p>
+	       <p class="card-text text-left"><small class="text-white">Views</small></p>
+        </div>
+	</div>
+	<div class="card text-white bg-success text-center ml-2 mb-2" style="height: 159px; width: 250px;">
+		<div class="card-header bg-dark">Students</div>
+			<div class="card-body">
+				<h5 class="card-title" style="font-size: 50px;">{{stud_count}}</h5>
+
+			</div>
 	</div>
 
 
-<div class="jumbotron border shadow container">
+	<div style="width: 50%;" class="offset-1 mt-3" >
+			<form>
+				<div class="input-group">
+					<input style="border-radius: 10%; "type="text"  placeholder="Search here...." class=" form-control form-control-lg shadow p-3 mb-5 bg-white rounded" id="myInput" onkeyup="searchRecords()">
+					
+			      	
+
+				
+			
+					&nbsp;&nbsp;
+					<input type="button" value="Clear" onclick="cleartxt()" class="mb-5 btn-info rounded-circle text-dark" >
+			</div>
+
+					
+
+				
+		</form>
+
+	</div>
+</div>
+
+
+<div class="jumbotron border shadow container mt-2">
 
 	<div class="row">
 		<div class="col-sm-4">
@@ -58,6 +87,7 @@
 				      		{% csrf_token %}
 				      		<input type="submit" class="btn btn-danger" value="Delete">
 				      		
+
 				      	</form>
 				      	
 				      </td>

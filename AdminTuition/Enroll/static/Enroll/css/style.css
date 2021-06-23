@@ -22,4 +22,40 @@
 	background: linear-gradient(45deg,gold, lime);
 } 
 
+.search-box{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translat(-50%, -50%);
+	border-radius: 40px;
+	padding: 10px;
+	background: black;
+	height: 40px;
+}
+
+.search-btn{
+	color: #e84118;
+	float: right;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	background: #2f3640;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.search-txt{
+	border: none;
+	background: none;
+	outline: none;
+	float: left;
+	padding: 0;
+	color: white;
+	font-size: 16px;
+	transition: 0.4s;
+	line-height: 40px;
+	width: 240px;
+}
+
 

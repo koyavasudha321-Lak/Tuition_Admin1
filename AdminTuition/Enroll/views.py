@@ -4,7 +4,6 @@ from .models import User
 
 
 
-
 # Create your views here.
 def add_show(request):
 
@@ -23,9 +22,15 @@ def add_show(request):
 		fm = StudentRegistration()
 
 	stud = User.objects.all()
+	stud_cnt = stud.count()
+
+	ct = request.session.get('count',0)
+	newcount = ct + 1
+	request.session['count'] = newcount
+	
 
 
-	return render(request,'Enroll/addAndShow.html', {'form':fm, 'stu':stud})
+	return render(request,'Enroll/addAndShow.html', {'form':fm, 'stu':stud, 'stud_count':stud_cnt, 'counts':newcount})
 
 
 	#this function will delete
@@ -51,5 +56,9 @@ def update_data(request, id):
 	return render(request, 'Enroll/updateStudent.html', {'form':fm})
 
 
+#views
 
 
+
+#def cnt(request):
+	
